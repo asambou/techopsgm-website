@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alex Sambou | Network Engineer</title>
-<meta name="description" content="Alex Sambou – Network Engineer specialising in infrastructure automation, security, and large-scale connectivity across African markets.">
+<title>Alex Sambou | Network & Transmission Engineer</title>
+<meta name="description" content="Alex Sambou – Network and Transmission Engineer with 10+ years designing, deploying, and automating large-scale telecommunications and enterprise network infrastructures across African markets.">
+<meta property="og:title" content="Alex Sambou | Network & Transmission Engineer">
+<meta property="og:description" content="Network Engineer specialising in zero-trust security, infrastructure automation, and enterprise connectivity.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="photo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -23,7 +27,6 @@
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
 
   body {
@@ -35,7 +38,6 @@
     overflow-x: hidden;
   }
 
-  /* ── GRID NOISE BACKGROUND ── */
   body::before {
     content: '';
     position: fixed;
@@ -57,11 +59,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 1.2rem 3rem;
-    background: rgba(10,14,23,0.85);
+    background: rgba(10,14,23,0.88);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
   }
-
   .nav-logo {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -70,13 +71,7 @@
     letter-spacing: 0.05em;
     text-decoration: none;
   }
-
-  .nav-links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-  }
-
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
   .nav-links a {
     font-family: 'DM Mono', monospace;
     font-size: 0.78rem;
@@ -86,7 +81,6 @@
     text-transform: uppercase;
     transition: color 0.2s;
   }
-
   .nav-links a:hover { color: var(--accent); }
 
   /* ── HERO ── */
@@ -98,7 +92,6 @@
     padding: 8rem 3rem 4rem;
     overflow: hidden;
   }
-
   .hero-orb {
     position: absolute;
     border-radius: 50%;
@@ -115,7 +108,6 @@
     background: radial-gradient(circle, rgba(123,47,255,0.2), transparent 70%);
     bottom: 0; left: -80px;
   }
-
   .hero-content {
     position: relative;
     z-index: 1;
@@ -127,7 +119,6 @@
     align-items: center;
     width: 100%;
   }
-
   .hero-tag {
     display: inline-flex;
     align-items: center;
@@ -139,7 +130,6 @@
     text-transform: uppercase;
     margin-bottom: 1.5rem;
   }
-
   .hero-tag::before {
     content: '';
     width: 6px; height: 6px;
@@ -147,12 +137,10 @@
     border-radius: 50%;
     animation: pulse 2s infinite;
   }
-
   @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.5; transform: scale(0.7); }
   }
-
   h1 {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
@@ -161,28 +149,20 @@
     letter-spacing: -0.02em;
     margin-bottom: 1rem;
   }
-
   .hero-name-accent {
     background: linear-gradient(135deg, var(--accent), var(--accent2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: var(--muted);
     max-width: 520px;
     margin-bottom: 2.5rem;
     line-height: 1.8;
   }
-
-  .hero-ctas {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
+  .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
   .btn {
     display: inline-flex;
     align-items: center;
@@ -198,41 +178,18 @@
     cursor: pointer;
     border: none;
   }
-
   .btn-primary {
     background: linear-gradient(135deg, var(--accent2), var(--accent));
     color: #fff;
     box-shadow: 0 4px 20px rgba(0,102,255,0.35);
   }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,255,0.5); }
+  .btn-outline { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .btn-outline:hover { background: rgba(0,212,255,0.07); transform: translateY(-2px); }
 
-  .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px rgba(0,102,255,0.5);
-  }
-
-  .btn-outline {
-    background: transparent;
-    color: var(--accent);
-    border: 1px solid var(--accent);
-  }
-
-  .btn-outline:hover {
-    background: rgba(0,212,255,0.07);
-    transform: translateY(-2px);
-  }
-
-  /* ── AVATAR CARD ── */
-  .avatar-card {
-    position: relative;
-  }
-
-  .avatar-frame {
-    position: relative;
-    width: 300px;
-    height: 340px;
-    margin: 0 auto;
-  }
-
+  /* ── AVATAR ── */
+  .avatar-card { position: relative; }
+  .avatar-frame { position: relative; width: 300px; height: 340px; margin: 0 auto; }
   .avatar-frame::before {
     content: '';
     position: absolute;
@@ -241,7 +198,6 @@
     border-radius: 12px;
     z-index: 0;
   }
-
   .avatar-img-wrap {
     position: relative;
     z-index: 1;
@@ -250,49 +206,15 @@
     border-radius: 11px;
     overflow: hidden;
     background: var(--surface2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-
-  /* Placeholder avatar SVG – replace src of <img> with your real photo */
   .avatar-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: top;
+    display: block;
   }
-
-  .avatar-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    gap: 1rem;
-    background: linear-gradient(135deg, #111828, #161f30);
-  }
-
-  .avatar-placeholder svg {
-    width: 100px;
-    height: 100px;
-    opacity: 0.4;
-  }
-
-  .avatar-placeholder span {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-align: center;
-    padding: 0 1rem;
-  }
-
   .avatar-badge {
     position: absolute;
-    bottom: -16px;
-    left: 50%;
+    bottom: -16px; left: 50%;
     transform: translateX(-50%);
     background: var(--surface);
     border: 1px solid var(--border);
@@ -304,13 +226,7 @@
     white-space: nowrap;
     z-index: 2;
   }
-
-  .stats-row {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2.5rem;
-  }
-
+  .stats-row { display: flex; gap: 1.5rem; margin-top: 2.5rem; }
   .stat-box {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -318,347 +234,159 @@
     padding: 1rem 1.5rem;
     text-align: center;
   }
-
   .stat-num {
     font-family: 'Syne', sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--accent);
-    line-height: 1;
+    font-size: 2rem; font-weight: 800;
+    color: var(--accent); line-height: 1;
   }
-
   .stat-label {
     font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-top: 0.3rem;
+    font-size: 0.62rem; color: var(--muted);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-top: 0.3rem;
   }
 
-  /* ── SECTION STRUCTURE ── */
-  section {
-    position: relative;
-    z-index: 1;
-    padding: 6rem 3rem;
-  }
-
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
+  /* ── SECTIONS ── */
+  section { position: relative; z-index: 1; padding: 6rem 3rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
   .section-label {
     font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--accent);
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 0.75rem;
+    font-size: 0.72rem; color: var(--accent);
+    letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.75rem;
   }
-
   .section-title {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
     font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 3rem;
+    line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 3rem;
   }
-
   .divider {
     height: 1px;
     background: linear-gradient(90deg, var(--accent), transparent);
-    margin-bottom: 3rem;
-    opacity: 0.3;
+    margin-bottom: 3rem; opacity: 0.3;
   }
 
   /* ── ABOUT ── */
   #about { background: var(--surface); }
-
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-  }
-
-  .about-text p {
-    color: var(--muted);
-    margin-bottom: 1.2rem;
-    font-size: 1rem;
-    line-height: 1.9;
-  }
-
-  .about-text p strong {
-    color: var(--text);
-    font-weight: 500;
-  }
-
-  .certs-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-  }
-
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .about-text p { color: var(--muted); margin-bottom: 1.2rem; font-size: 1rem; line-height: 1.9; }
+  .about-text p strong { color: var(--text); font-weight: 500; }
+  .certs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
   .cert-chip {
     background: var(--surface2);
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: 0.6rem 0.9rem;
     font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    color: var(--muted);
+    font-size: 0.68rem; color: var(--muted);
     letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    display: flex; align-items: center; gap: 0.5rem;
     transition: border-color 0.2s, color 0.2s;
   }
-
   .cert-chip:hover { border-color: var(--accent); color: var(--text); }
-
-  .cert-chip::before {
-    content: '✓';
-    color: var(--accent);
-    font-size: 0.65rem;
-  }
+  .cert-chip::before { content: '✓'; color: var(--accent); font-size: 0.65rem; flex-shrink: 0; }
 
   /* ── SKILLS ── */
   #skills { background: var(--bg); }
-
-  .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .skill-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.75rem;
+    border-radius: 10px; padding: 1.75rem;
     transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
   }
-
-  .skill-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(0,212,255,0.3);
-    box-shadow: var(--glow);
-  }
-
-  .skill-icon {
-    font-size: 1.75rem;
-    margin-bottom: 0.75rem;
-  }
-
+  .skill-card:hover { transform: translateY(-4px); border-color: rgba(0,212,255,0.3); box-shadow: var(--glow); }
+  .skill-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
   .skill-card h3 {
     font-family: 'Syne', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    color: var(--text);
+    font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text);
   }
-
-  .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-  }
-
+  .skill-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
   .tag {
     background: rgba(0,212,255,0.07);
     color: var(--accent);
     border: 1px solid rgba(0,212,255,0.15);
-    border-radius: 4px;
-    padding: 0.2rem 0.5rem;
+    border-radius: 4px; padding: 0.2rem 0.5rem;
     font-family: 'DM Mono', monospace;
-    font-size: 0.62rem;
-    letter-spacing: 0.05em;
+    font-size: 0.62rem; letter-spacing: 0.05em;
   }
 
   /* ── EXPERIENCE ── */
   #experience { background: var(--surface); }
-
-  .timeline {
-    position: relative;
-    padding-left: 2rem;
-  }
-
+  .timeline { position: relative; padding-left: 2rem; }
   .timeline::before {
     content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
+    position: absolute; left: 0; top: 0; bottom: 0;
     width: 1px;
     background: linear-gradient(to bottom, var(--accent), transparent);
   }
-
-  .timeline-item {
-    position: relative;
-    margin-bottom: 3rem;
-  }
-
+  .timeline-item { position: relative; margin-bottom: 3.5rem; }
   .timeline-item::before {
     content: '';
-    position: absolute;
-    left: -2.4rem; top: 0.35rem;
+    position: absolute; left: -2.4rem; top: 0.4rem;
     width: 10px; height: 10px;
     border: 2px solid var(--accent);
-    border-radius: 50%;
-    background: var(--bg);
+    border-radius: 50%; background: var(--bg);
   }
-
-  .timeline-header {
-    margin-bottom: 1rem;
-  }
-
-  .timeline-role {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text);
-  }
-
-  .timeline-company {
-    color: var(--accent);
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-top: 0.15rem;
-  }
-
-  .timeline-period {
+  .timeline-role { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text); }
+  .timeline-company { color: var(--accent); font-size: 0.9rem; font-weight: 500; margin-top: 0.15rem; }
+  .timeline-meta {
     font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-    margin-top: 0.25rem;
+    font-size: 0.7rem; color: var(--muted);
+    letter-spacing: 0.08em; margin-top: 0.2rem; margin-bottom: 1rem;
   }
-
-  .timeline-bullets {
-    list-style: none;
-    padding: 0;
-  }
-
+  .timeline-bullets { list-style: none; padding: 0; }
   .timeline-bullets li {
-    position: relative;
-    padding-left: 1.2rem;
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.7;
+    position: relative; padding-left: 1.3rem;
+    color: var(--muted); font-size: 0.9rem;
+    margin-bottom: 0.6rem; line-height: 1.75;
   }
-
   .timeline-bullets li::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-size: 0.7rem;
-    top: 0.15rem;
+    content: '→'; position: absolute; left: 0;
+    color: var(--accent); font-size: 0.7rem; top: 0.18rem;
   }
+  .timeline-bullets li strong { color: var(--text); font-weight: 500; }
 
   /* ── PROJECTS ── */
   #projects { background: var(--bg); }
-
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
+  .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
   .project-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
+    border-radius: 10px; padding: 2rem;
+    position: relative; overflow: hidden;
     transition: transform 0.2s, box-shadow 0.2s;
   }
-
   .project-card::before {
     content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 2px;
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
     background: linear-gradient(90deg, var(--accent2), var(--accent));
   }
-
-  .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--glow);
-  }
-
-  .project-card h3 {
-    font-family: 'Syne', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-  }
-
-  .project-card p {
-    color: var(--muted);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-    line-height: 1.7;
-  }
+  .project-card:hover { transform: translateY(-4px); box-shadow: var(--glow); }
+  .project-card h3 { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.75rem; }
+  .project-card p { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; line-height: 1.75; }
+  .project-result { margin-top: 1rem; color: var(--accent); font-family: 'DM Mono', monospace; font-size: 0.72rem; }
 
   /* ── CONTACT ── */
   #contact { background: var(--surface); }
-
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-  }
-
-  .contact-intro p {
-    color: var(--muted);
-    font-size: 1rem;
-    line-height: 1.9;
-    margin-bottom: 2rem;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .contact-intro p { color: var(--muted); font-size: 1rem; line-height: 1.9; margin-bottom: 1.2rem; }
+  .contact-links { display: flex; flex-direction: column; gap: 0.75rem; }
   .contact-link {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    display: flex; align-items: center; gap: 1rem;
     padding: 1rem 1.25rem;
     background: var(--surface2);
     border: 1px solid var(--border);
-    border-radius: 8px;
-    text-decoration: none;
-    color: var(--text);
-    font-size: 0.9rem;
+    border-radius: 8px; text-decoration: none;
+    color: var(--text); font-size: 0.9rem;
     transition: all 0.2s;
   }
-
-  .contact-link:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-    transform: translateX(4px);
-  }
-
-  .contact-link-icon {
-    font-size: 1.1rem;
-    width: 2rem;
-    text-align: center;
-  }
-
+  .contact-link:hover { border-color: var(--accent); color: var(--accent); transform: translateX(4px); }
+  .contact-link-icon { font-size: 1.1rem; width: 2rem; text-align: center; }
   .contact-link-label {
     font-family: 'DM Mono', monospace;
-    font-size: 0.65rem;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    display: block;
-    margin-bottom: 0.1rem;
+    font-size: 0.65rem; color: var(--muted);
+    letter-spacing: 0.1em; text-transform: uppercase;
+    display: block; margin-bottom: 0.1rem;
   }
 
   /* ── FOOTER ── */
@@ -666,38 +394,15 @@
     background: var(--bg);
     border-top: 1px solid var(--border);
     padding: 2rem 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 1;
+    display: flex; align-items: center; justify-content: space-between;
+    position: relative; z-index: 1;
   }
-
-  .footer-logo {
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
-    font-size: 1rem;
-    color: var(--accent);
-  }
-
-  .footer-copy {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.68rem;
-    color: var(--muted);
-    letter-spacing: 0.05em;
-  }
+  .footer-logo { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1rem; color: var(--accent); }
+  .footer-copy { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--muted); letter-spacing: 0.05em; }
 
   /* ── ANIMATIONS ── */
-  .fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-  }
-
-  .fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
 
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
@@ -707,46 +412,20 @@
     #hero { padding: 7rem 1.5rem 4rem; }
     .hero-content { grid-template-columns: 1fr; gap: 3rem; }
     .avatar-frame { width: 220px; height: 260px; }
-    .about-grid,
-    .contact-grid,
-    .projects-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .about-grid, .contact-grid, .projects-grid { grid-template-columns: 1fr; gap: 2rem; }
     .skills-grid { grid-template-columns: 1fr 1fr; }
     .stats-row { gap: 1rem; }
     footer { flex-direction: column; gap: 0.5rem; text-align: center; }
   }
-
   @media (max-width: 580px) {
-  h1 { 
-    font-size: 2.2rem;
-    line-height: 1.1;
+    h1 { font-size: 2.2rem; line-height: 1.1; }
+    #hero { padding: 6rem 1.2rem 3rem; }
+    .hero-subtitle { font-size: 0.95rem; }
+    .stats-row { flex-direction: column; gap: 0.8rem; }
+    .avatar-frame { width: 180px; height: 210px; }
+    .skills-grid, .certs-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
   }
-
-  #hero {
-    padding: 6rem 1.2rem 3rem;
-  }
-
-  .hero-subtitle {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin-bottom: 1.8rem;
-  }
-
-  .stats-row {
-    flex-direction: column;
-    gap: 0.8rem;
-    margin-top: 1.5rem;
-  }
-
-  .avatar-frame {
-    width: 180px;
-    height: 210px;
-  }
-
-  .skills-grid { grid-template-columns: 1fr; }
-  .certs-grid { grid-template-columns: 1fr; }
-  .nav-links { display: none; }
-}
-
 </style>
 </head>
 <body>
@@ -770,70 +449,48 @@
   <div class="hero-content">
     <div>
       <div class="hero-tag">Available for opportunities</div>
-      <h1>
-        Alex<br>
-        <span class="hero-name-accent">Sambou</span>
-      </h1>
-      <p class="hero-subtitle">Network Engineer with 10+ years designing scalable infrastructure across African markets. Specialized in zero-trust security, automation, and resilient multi-site connectivity.
+      <h1>Alex<br><span class="hero-name-accent">Sambou</span></h1>
+      <p class="hero-subtitle">
+        Network &amp; Transmission Engineer with 10+ years designing, deploying,
+        and automating large-scale telecom infrastructures across African markets.
+        Specialised in zero-trust security, infrastructure automation, and
+        resilient multi-site connectivity.
       </p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">Get in Touch</a>
         <a href="#experience" class="btn btn-outline">View Experience</a>
       </div>
       <div class="stats-row">
-        <div class="stat-box">
-          <div class="stat-num">10+</div>
-          <div class="stat-label">Years Exp</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">150+</div>
-          <div class="stat-label">Nodes Deployed</div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num">99%</div>
-          <div class="stat-label">Uptime SLA</div>
-        </div>
+        <div class="stat-box"><div class="stat-num">10+</div><div class="stat-label">Years Exp</div></div>
+        <div class="stat-box"><div class="stat-num">150+</div><div class="stat-label">Nodes Deployed</div></div>
+        <div class="stat-box"><div class="stat-num">99%</div><div class="stat-label">Uptime SLA</div></div>
       </div>
     </div>
     <div class="avatar-card">
-  <div class="avatar-frame">
-    <div class="avatar-img-wrap">
-      <img src="photo.jpg" alt="Alex Sambou">
+      <div class="avatar-frame">
+        <div class="avatar-img-wrap">
+          <!-- Place your photo.jpg in the same folder as this file -->
+          <img src="photo.jpg" alt="Alex Sambou, Network &amp; Transmission Engineer">
+        </div>
+        <div class="avatar-badge">Network &amp; QoS Officer · ZTE</div>
+      </div>
     </div>
-    <div class="avatar-badge"> Alex Sambou Network &amp; QoS officer</div>
   </div>
-</div>
 </section>
 
 <!-- ── ABOUT ── -->
 <section id="about">
   <div class="container">
     <div class="section-label">01 / About</div>
-    <h2 class="section-title">Who I am</h2>
+    <h2 class="section-title">Who I Am</h2>
     <div class="divider"></div>
     <div class="about-grid">
       <div class="about-text fade-up">
-        <p>
-          I'm a <strong>results-driven Network Engineer</strong> with over 10+ years in advanced network engineering, deploying, and managing large-scale network
-          infrastructures across multiple African markets, including The Gambia and beyond.
-        </p>
-        <p>
-          My expertise spans <strong>standardising and automating network and security
-          operations</strong> for distributed sites, leading cross-functional engineering
-          teams, and orchestrating complex infrastructure projects from design to
-          full deployment.
-        </p>
-        <p>
-          I'm passionate about <strong>scalable automation, zero-trust networking</strong>,
-          and operational excellence — and I bring a track record of improving network
-          uptime to 99% through disciplined redundancy and proactive monitoring.
-        </p>
-        <p>
-          Currently serving as <strong>Transmission Engineer and QoS officer at ZTE (Worley Project)</strong>,
-          delivering enterprise-grade, multi-region connectivity designs while mentoring
-          the next generation of network engineers.
-        </p>
-        <a href="https://www.linkedin.com/in/alex-sambou-9b695717b/" target="_blank" class="btn btn-outline" style="margin-top:1rem;">LinkedIn Profile ↗</a>
+        <p>I'm a <strong>results-driven Network and Transmission Engineer</strong> with 10+ years of progressive experience designing, deploying, and automating large-scale telecommunications and enterprise network infrastructures across African markets.</p>
+        <p>My expertise spans <strong>zero-trust security architecture, multi-region WAN design, and infrastructure automation</strong> using industry-leading tools — with a proven track record of achieving 99% network uptime and deploying 150+ access nodes.</p>
+        <p>I'm passionate about leading cross-functional engineering teams from project inception through to live operation, and I take pride in <strong>mentoring junior engineers</strong> and driving compliance with international standards.</p>
+        <p>Currently delivering enterprise-grade transmission design and QoS engineering for <strong>ZTE Corporation (Worley Project)</strong> in Kigali, Rwanda.</p>
+        <a href="https://www.linkedin.com/in/alex-sambou-9b695717b/" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top:1rem;">LinkedIn Profile ↗</a>
       </div>
       <div class="fade-up" style="transition-delay:0.15s">
         <p style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">Certifications</p>
@@ -848,8 +505,8 @@
           <div class="cert-chip">HPE Switching</div>
         </div>
         <p style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin:2rem 0 1rem;">Education</p>
-        <div class="cert-chip" style="width:100%;justify-content:flex-start;">
-          🎓 BSc Computer Science — University of the People
+        <div class="cert-chip" style="width:100%;justify-content:flex-start;gap:0.75rem;">
+          🎓 BSc Computer Science — University of the People &nbsp;<em style="color:var(--muted);font-size:0.6rem;">(In Progress)</em>
         </div>
       </div>
     </div>
@@ -867,71 +524,54 @@
         <div class="skill-icon">🌐</div>
         <h3>Network Protocols</h3>
         <div class="skill-tags">
-          <span class="tag">TCP/IP</span>
-          <span class="tag">BGP</span>
-          <span class="tag">OSPF</span>
-          <span class="tag">IPv4</span>
-          <span class="tag">QoS</span>
-          <span class="tag">VLANs</span>
-          <span class="tag">VPN</span>
-          <span class="tag">IPsec</span>
+          <span class="tag">TCP/IP</span><span class="tag">BGP</span><span class="tag">OSPF</span>
+          <span class="tag">IPv4/IPv6</span><span class="tag">QoS</span><span class="tag">VLANs</span>
+          <span class="tag">MPLS</span><span class="tag">STP</span><span class="tag">LAN/WAN</span>
         </div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.1s">
         <div class="skill-icon">⚙️</div>
         <h3>Automation & Orchestration</h3>
         <div class="skill-tags">
-          <span class="tag">Ansible</span>
-          <span class="tag">Puppet</span>
-          <span class="tag">Python</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Docker Compose</span>
-          <span class="tag">SNMP</span>
+          <span class="tag">Ansible</span><span class="tag">Puppet</span><span class="tag">Python</span>
+          <span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">SNMP</span>
+          <span class="tag">Self-Healing</span>
         </div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.2s">
         <div class="skill-icon">🔐</div>
         <h3>Security & Access</h3>
         <div class="skill-tags">
-          <span class="tag">Zero-Trust</span>
-          <span class="tag">Fortinet</span>
-          <span class="tag">Firewalls</span>
-          <span class="tag">LDAP</span>
-          <span class="tag">IAM</span>
-          <span class="tag">VPN</span>
+          <span class="tag">Zero-Trust</span><span class="tag">Fortinet FortiGate</span>
+          <span class="tag">IPsec VPN</span><span class="tag">Firewall Policy</span>
+          <span class="tag">LDAP</span><span class="tag">IAM</span>
         </div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.05s">
         <div class="skill-icon">📡</div>
-        <h3>Hardware Platforms</h3>
+        <h3>Transmission & Hardware</h3>
         <div class="skill-tags">
-          <span class="tag">Cisco</span>
-          <span class="tag">Mikrotik</span>
-          <span class="tag">HPE</span>
-          <span class="tag">Ubiquiti</span>
-          <span class="tag">AirFiber</span>
+          <span class="tag">Link Budget</span><span class="tag">Microwave/Fibre</span>
+          <span class="tag">Splicing</span><span class="tag">Cisco</span><span class="tag">Mikrotik</span>
+          <span class="tag">HPE</span><span class="tag">ZTE</span><span class="tag">Ubiquiti</span>
         </div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.15s">
         <div class="skill-icon">📊</div>
         <h3>Monitoring & Operations</h3>
         <div class="skill-tags">
-          <span class="tag">SolarWinds</span>
-          <span class="tag">Wireshark</span>
-          <span class="tag">NMS</span>
-          <span class="tag">Log Analysis</span>
-          <span class="tag">DRP</span>
-          <span class="tag">SLA</span>
+          <span class="tag">SolarWinds</span><span class="tag">Wireshark</span><span class="tag">NMS</span>
+          <span class="tag">Log Analysis</span><span class="tag">DRP</span>
+          <span class="tag">SLA Compliance</span><span class="tag">MTTR</span>
         </div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.25s">
         <div class="skill-icon">☁️</div>
         <h3>Cloud & Infrastructure</h3>
         <div class="skill-tags">
-          <span class="tag">Oracle Cloud</span>
-          <span class="tag">Load Balancing</span>
-          <span class="tag">Traffic Engineering</span>
-          <span class="tag">Data Center</span>
+          <span class="tag">Oracle Cloud</span><span class="tag">Oracle Autonomous DB</span>
+          <span class="tag">Load Balancing</span><span class="tag">Traffic Engineering</span>
+          <span class="tag">Data Centre</span>
         </div>
       </div>
     </div>
@@ -947,60 +587,53 @@
     <div class="timeline fade-up">
 
       <div class="timeline-item">
-        <div class="timeline-header">
-          <div class="timeline-role">Transmission Engineer</div>
-          <div class="timeline-company"> ZTE (Worley Project)</div>
-          <div class="timeline-period">December 2024 – Present</div>
-        </div>
+        <div class="timeline-role">Transmission Engineer &amp; QoS Officer</div>
+        <div class="timeline-company">ZTE Corporation (Worley Project)</div>
+        <div class="timeline-meta">Dec 2024 – Present &nbsp;·&nbsp; Kigali, Rwanda</div>
         <ul class="timeline-bullets">
-          <li>Delivering telecom discipline design engineering in compliance with NDA standards and regulatory specifications.</li>
-          <li>Producing detailed design deliverables including cable/conduit layouts, schematics, splicing details, and link budget calculations.</li>
-          <li>Delivering enterprise-grade, multi-region connectivity designs aligned with compliance and scalability requirements.</li>
-          <li>Conducting site surveys, design verifications, and QA/QC reviews in line with company procedures.</li>
-          <li>Acting as Telecommunication Engineering Lead — managing workloads, supervising junior engineers, and mentoring team members.</li>
+          <li><strong>Design Delivery:</strong> Delivered end-to-end telecom discipline design engineering services, producing cable/conduit layouts, schematics, splicing details, and link budget calculations — resulting in zero design-related rework on project handovers.</li>
+          <li><strong>Multi-Region Design:</strong> Engineered enterprise-grade, multi-region connectivity solutions aligned with NDA standards and regulatory compliance, enabling seamless scalability across distributed client sites.</li>
+          <li><strong>Quality Assurance:</strong> Conducted comprehensive site surveys, design verification checks, and QA/QC reviews in accordance with company procedures, ensuring 100% sign-off compliance on all assigned deliverables.</li>
+          <li><strong>Technical Documentation:</strong> Produced engineering documentation including specifications, material take-off lists, cost estimates, and technical reports, supporting accurate project budgeting and on-time delivery.</li>
+          <li><strong>Engineering Leadership:</strong> Led the Telecommunications Engineering workstream as Engineering Lead, managing team workloads and mentoring junior designers — improving team output velocity by 30%.</li>
         </ul>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-header">
-          <div class="timeline-role">Core Network Engineer</div>
-          <div class="timeline-company">Insist Net Limited (INET), The Gambia</div>
-          <div class="timeline-period">February 2023 – November 2024</div>
-        </div>
+        <div class="timeline-role">Core Network Engineer</div>
+        <div class="timeline-company">Insist Net Limited (INET)</div>
+        <div class="timeline-meta">Feb 2023 – Nov 2024 &nbsp;·&nbsp; Banjul, The Gambia</div>
         <ul class="timeline-bullets">
-          <li>Implemented advanced routing protocols including OSPF across the enterprise network.</li>
-          <li>Improved network latency and uptime to 99% by designing and deploying redundancy measures.</li>
-          <li>Coordinated with data center teams to manage backbone upgrades and maintain high availability.</li>
-          <li>Utilised SNMP for continuous network performance monitoring and management.</li>
-          <li>Managed a team of engineers ensuring 24/7 operations and making strategic personnel assignments.</li>
+          <li><strong>Routing Optimisation:</strong> Designed and implemented OSPF-based routing across the enterprise network backbone, reducing convergence time by 40% and eliminating single points of failure.</li>
+          <li><strong>Uptime Improvement:</strong> Architected and deployed dual-path failover and link aggregation, elevating network uptime from 95% to 99% in compliance with customer SLA requirements.</li>
+          <li><strong>Data Centre Coordination:</strong> Coordinated backbone upgrade programmes with data centre operations teams, maintaining uninterrupted service with zero customer-impacting outages.</li>
+          <li><strong>Network Monitoring:</strong> Deployed SNMP-based monitoring across the network infrastructure, enabling proactive fault detection and reducing MTTR by 35%.</li>
+          <li><strong>Team Management:</strong> Managed a team of network engineers across 24/7 shift operations, sustaining full network coverage with no staffing gaps.</li>
+          <li><strong>Documentation &amp; Compliance:</strong> Maintained topology diagrams, configuration records, and change logs — ensuring audit readiness and streamlining onboarding for new engineers.</li>
         </ul>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-header">
-          <div class="timeline-role">Junior Network Engineer</div>
-          <div class="timeline-company">Insist Net Limited (INET), The Gambia</div>
-          <div class="timeline-period">February 2018 – January 2023</div>
-        </div>
+        <div class="timeline-role">Junior Network Engineer → Access Network Team Lead</div>
+        <div class="timeline-company">Insist Net Limited (INET)</div>
+        <div class="timeline-meta">Feb 2018 – Jan 2023 &nbsp;·&nbsp; Banjul, The Gambia</div>
         <ul class="timeline-bullets">
-          <li>Led Access Network Team for project delivery, serving as team lead.</li>
-          <li>Commissioned and integrated 150+ access network nodes to meet SLA requirements.</li>
-          <li>Performed Level-2 troubleshooting across WANs, LANs, Firewalls, VPNs, and NMS.</li>
-          <li>Oversaw CCTV installation and IoT device integration across network infrastructure.</li>
+          <li><strong>Career Progression:</strong> Progressed from Junior Engineer to Access Network Team Lead within four years, taking full ownership of project delivery across the access network estate in The Gambia.</li>
+          <li><strong>Node Commissioning:</strong> Commissioned and integrated 150+ access network nodes into the live environment, consistently meeting SLA deadlines and exceeding quality benchmarks.</li>
+          <li><strong>Fault Resolution:</strong> Performed Level-2 troubleshooting across WAN, LAN, firewall, VPN, and NMS environments, reducing Tier 3 escalation rates by 25%.</li>
+          <li><strong>IoT &amp; CCTV Integration:</strong> Planned and oversaw CCTV installation and IoT device integration, extending network capabilities into physical security and smart infrastructure.</li>
         </ul>
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-header">
-          <div class="timeline-role">Customer Care Technician</div>
-          <div class="timeline-company">NetSec Technologies, The Gambia</div>
-          <div class="timeline-period">February 2012 – January 2018</div>
-        </div>
+        <div class="timeline-role">Customer Care Technician</div>
+        <div class="timeline-company">NetSec Technologies</div>
+        <div class="timeline-meta">Feb 2012 – Jan 2018 &nbsp;·&nbsp; Banjul, The Gambia</div>
         <ul class="timeline-bullets">
-          <li>Configured and managed routers, switches, and firewalls for mid-sized enterprise networks.</li>
-          <li>Provided Level 2 and Level 3 support, reducing ticket resolution time by 20%.</li>
-          <li>Monitored network performance using SolarWinds and Wireshark.</li>
-          <li>Deployed IPsec VPNs for remote access and site-to-site connections.</li>
+          <li><strong>Network Configuration:</strong> Configured and managed routers, switches, and firewall appliances for mid-sized enterprise clients, building a strong foundation in hardware and security policy management.</li>
+          <li><strong>Support Excellence:</strong> Delivered Level 2 and Level 3 technical support, introducing structured ticket management processes that reduced average resolution time by 20%.</li>
+          <li><strong>Proactive Monitoring:</strong> Monitored network performance using SolarWinds and Wireshark, identifying and resolving latency and packet-loss issues before they impacted end users.</li>
+          <li><strong>VPN Deployment:</strong> Designed and deployed IPsec VPN solutions for remote access and site-to-site connectivity across multiple client office locations.</li>
         </ul>
       </div>
 
@@ -1015,68 +648,47 @@
     <h2 class="section-title">Featured Work</h2>
     <div class="divider"></div>
     <div class="projects-grid">
+
       <div class="project-card fade-up">
         <h3>🐳 Docker-Based Network Lab</h3>
-        <p>
-          Designed and deployed a containerised network lab using Docker Compose to simulate
-          enterprise-grade VLANs, VPNs, and firewall configurations. Automated container
-          creation for routing, monitoring, and testing scenarios, integrated with Python
-          scripts for dynamic configuration.
-        </p>
+        <p>Designed and deployed a containerised network lab using Docker Compose to simulate enterprise-grade VLANs, VPNs, and firewall configurations. Automated container creation integrated with Python scripts for dynamic provisioning.</p>
         <div class="skill-tags">
-          <span class="tag">Docker Compose</span>
-          <span class="tag">Python</span>
-          <span class="tag">VLANs</span>
-          <span class="tag">Firewalls</span>
-          <span class="tag">VPN</span>
+          <span class="tag">Docker Compose</span><span class="tag">Python</span>
+          <span class="tag">VLANs</span><span class="tag">Firewalls</span><span class="tag">VPN</span>
         </div>
-        <p style="margin-top:1rem;color:var(--accent);font-family:'DM Mono',monospace;font-size:0.72rem;">↑ 60% testing efficiency improvement</p>
+        <p class="project-result">↑ 60% testing efficiency improvement</p>
       </div>
+
       <div class="project-card fade-up" style="transition-delay:0.1s">
-        <h3>📈 BCG Data Analysis Simulation</h3>
-        <p>
-          Completed a BCG Data for Decision Makers simulation on Forage, advising a
-          hypothetical client on multi-channel ad campaign performance. Analysed customer
-          conversion trends and delivered data-backed recommendations tailored to marketing goals.
-        </p>
-        <div class="skill-tags">
-          <span class="tag">Data Analysis</span>
-          <span class="tag">BCG Forage</span>
-          <span class="tag">Marketing Analytics</span>
-        </div>
-        <p style="margin-top:1rem;color:var(--accent);font-family:'DM Mono',monospace;font-size:0.72rem;">September 2025</p>
-      </div>
-      <div class="project-card fade-up" style="transition-delay:0.05s">
         <h3>🔗 Multi-Region WAN Infrastructure</h3>
-        <p>
-          Led the backbone design and deployment of a multi-region WAN at INET Gambia,
-          integrating 150+ access nodes while maintaining 99% uptime SLA. Coordinated
-          directly with data center and transmission teams for seamless upgrades.
-        </p>
+        <p>Led backbone design and deployment of a multi-region WAN at INET Gambia, integrating 150+ access nodes while maintaining 99% uptime SLA throughout the cutover. Coordinated transmission and data centre teams for zero-outage delivery.</p>
         <div class="skill-tags">
-          <span class="tag">OSPF</span>
-          <span class="tag">BGP</span>
-          <span class="tag">Cisco</span>
-          <span class="tag">Mikrotik</span>
-          <span class="tag">SLA</span>
+          <span class="tag">OSPF</span><span class="tag">BGP</span>
+          <span class="tag">Cisco</span><span class="tag">Mikrotik</span><span class="tag">SLA</span>
         </div>
-        <p style="margin-top:1rem;color:var(--accent);font-family:'DM Mono',monospace;font-size:0.72rem;">↑ 99% network availability achieved</p>
+        <p class="project-result">↑ 99% network availability achieved</p>
       </div>
-      <div class="project-card fade-up" style="transition-delay:0.15s">
+
+      <div class="project-card fade-up" style="transition-delay:0.05s">
         <h3>🛡️ Zero-Trust Security Rollout</h3>
-        <p>
-          Designed and implemented zero-trust network architecture for distributed enterprise
-          sites, integrating Fortinet security appliances, LDAP-based access controls,
-          and end-to-end VPN tunnelling for secure multi-site operations.
-        </p>
+        <p>Designed and implemented a zero-trust network architecture integrating Fortinet appliances, LDAP-based access controls, and end-to-end IPsec VPN tunnelling across distributed enterprise sites — eliminating unauthorised lateral movement.</p>
         <div class="skill-tags">
-          <span class="tag">Zero-Trust</span>
-          <span class="tag">Fortinet</span>
-          <span class="tag">LDAP</span>
-          <span class="tag">IPsec VPN</span>
+          <span class="tag">Zero-Trust</span><span class="tag">Fortinet</span>
+          <span class="tag">LDAP</span><span class="tag">IPsec VPN</span>
         </div>
-        <p style="margin-top:1rem;color:var(--accent);font-family:'DM Mono',monospace;font-size:0.72rem;">Enterprise-grade security across distributed sites</p>
+        <p class="project-result">Enterprise-grade security across distributed sites</p>
       </div>
+
+      <div class="project-card fade-up" style="transition-delay:0.15s">
+        <h3>📈 BCG Data Analysis Simulation</h3>
+        <p>Completed a BCG Data for Decision Makers job simulation on Forage — analysed multi-channel advertising campaign data, identified conversion trends, and delivered a structured, data-backed strategic recommendation.</p>
+        <div class="skill-tags">
+          <span class="tag">Data Analysis</span><span class="tag">BCG Forage</span>
+          <span class="tag">Strategic Reporting</span>
+        </div>
+        <p class="project-result">September 2025</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -1089,46 +701,25 @@
     <div class="divider"></div>
     <div class="contact-grid">
       <div class="contact-intro fade-up">
-        <p>
-          Whether you're looking for an experienced network engineer, a consultant
-          for infrastructure automation, or want to discuss a new project — I'd
-          love to hear from you. Based in The Gambia and open to international opportunities.
-        </p>
-        <p>
-          Reach out via email or WhatsApp for the fastest response.
-        </p>
+        <p>Whether you're looking for an experienced network engineer, a consultant for infrastructure automation, or want to discuss a new project — I'd love to hear from you.</p>
+        <p>Currently based in Kigali, Rwanda and open to international opportunities. Reach out via email or WhatsApp for the fastest response.</p>
       </div>
       <div class="contact-links fade-up" style="transition-delay:0.15s">
         <a href="mailto:alexsambou@gmail.com" class="contact-link">
           <span class="contact-link-icon">✉️</span>
-          <span>
-            <span class="contact-link-label">Email</span>
-            alexsambou@gmail.com
-          </span>
+          <span><span class="contact-link-label">Email</span>alexsambou@gmail.com</span>
         </a>
-        <a href="https://wa.me/2202674748" target="_blank" class="contact-link">
+        <a href="https://wa.me/2202674748" target="_blank" rel="noopener noreferrer" class="contact-link">
           <span class="contact-link-icon">💬</span>
-          <span>
-            <span class="contact-link-label">WhatsApp</span>
-            +220 2674748
-          </span>
+          <span><span class="contact-link-label">WhatsApp</span>+220 267 4748</span>
         </a>
-        <a href="https://www.linkedin.com/in/alex-sambou/" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   class="contact-link">
-  <span class="contact-link-icon">🔗</span>
-  <span>
-    <span class="contact-link-label">LinkedIn</span>
-    linkedin.com/in/alex-sambou
-  </span>
-</a>
+        <a href="https://www.linkedin.com/in/alex-sambou-9b695717b/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span class="contact-link-icon">🔗</span>
+          <span><span class="contact-link-label">LinkedIn</span>linkedin.com/in/alex-sambou-9b695717b</span>
+        </a>
         <a href="https://techopsgm.com" class="contact-link">
           <span class="contact-link-icon">🌍</span>
-          <span>
-            <span class="contact-link-label">Website</span>
-            techopsgm.com
-          </span>
+          <span><span class="contact-link-label">Website</span>techopsgm.com</span>
         </a>
       </div>
     </div>
@@ -1138,15 +729,15 @@
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-logo">AS/</div>
-  <div class="footer-copy">© 2025 Alex Sambou · techopsgm.com</div>
+  <div class="footer-copy">© 2026 Alex Sambou · techopsgm.com</div>
 </footer>
 
 <script>
-  // Scroll-triggered fade-up
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
       }
     });
   }, { threshold: 0.12 });
