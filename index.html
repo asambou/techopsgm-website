@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alex Sambou | AI Solutions Architect &amp; Network Engineer</title>
-<meta name="description" content="Alex Sambou - AI Solutions Architect, Founder, and Network Engineer from The Gambia. Creator of GambiaGPT - The Gambia's first national AI platform. Built solo with zero institutional funding.">
-<meta property="og:title" content="Alex Sambou | Network &amp; Transmission Engineer">
-<meta property="og:description" content="AI Solutions Architect, Founder &amp; Network Engineer. Creator of GambiaGPT — The Gambia's first national AI platform. Built solo, zero institutional funding.">
+<meta name="description" content="Alex Sambou - AI Solutions Architect, Founder, and Network Engineer from The Gambia. Creator of GambiaGPT and NetWatchX. Built solo with zero institutional funding.">
+<meta property="og:title" content="Alex Sambou | Network Engineer &amp; AI Founder">
+<meta property="og:description" content="AI Solutions Architect, Founder &amp; Network Engineer. Creator of GambiaGPT and NetWatchX — built solo, zero institutional funding.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="photo.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,6 +42,8 @@
   .btn-outline:hover{background:rgba(0,212,255,0.07);transform:translateY(-2px);}
   .btn-ai{background:linear-gradient(135deg,#7b2fff,#0066ff);color:#fff;box-shadow:0 4px 20px rgba(123,47,255,0.4);}
   .btn-ai:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(123,47,255,0.55);}
+  .btn-noc{background:linear-gradient(135deg,#0066ff,#00d4ff);color:#fff;box-shadow:0 4px 20px rgba(0,102,255,0.4);}
+  .btn-noc:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,102,255,0.55);}
   .avatar-card{position:relative;}
   .avatar-frame{position:relative;width:300px;height:340px;margin:0 auto;}
   .avatar-frame::before{content:"";position:absolute;inset:-2px;background:linear-gradient(135deg,var(--accent),var(--accent3),var(--accent2));border-radius:12px;z-index:0;}
@@ -64,7 +66,7 @@
   .certs-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;}
   .cert-chip{background:var(--surface2);border:1px solid var(--border);border-radius:6px;padding:0.6rem 0.9rem;font-family:"DM Mono",monospace;font-size:0.68rem;color:var(--muted);letter-spacing:0.05em;display:flex;align-items:center;gap:0.5rem;transition:border-color 0.2s,color 0.2s;}
   .cert-chip:hover{border-color:var(--accent);color:var(--text);}
-  .cert-chip::before{content:"checkmark";content:"\2713";color:var(--accent);font-size:0.65rem;flex-shrink:0;}
+  .cert-chip::before{content:"\2713";color:var(--accent);font-size:0.65rem;flex-shrink:0;}
   #skills{background:var(--bg);}
   .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
   .skill-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:1.75rem;transition:transform 0.2s,border-color 0.2s,box-shadow 0.2s;}
@@ -97,11 +99,17 @@
   .project-card.featured::before{background:linear-gradient(90deg,#7b2fff,#0066ff,#00d4ff);height:3px;}
   .project-card.featured:hover{transform:translateY(-4px);border-color:rgba(123,47,255,0.6);box-shadow:0 0 60px rgba(123,47,255,0.2);}
   .project-card.featured h3{font-size:1.4rem;margin-bottom:0.5rem;}
+  .project-card.featured-noc{grid-column:1 / -1;background:linear-gradient(135deg,#0a1628,#0f1e35);border-color:rgba(0,102,255,0.35);padding:2.5rem;}
+  .project-card.featured-noc::before{background:linear-gradient(90deg,#0066ff,#00d4ff);height:3px;}
+  .project-card.featured-noc:hover{transform:translateY(-4px);border-color:rgba(0,102,255,0.6);box-shadow:0 0 60px rgba(0,102,255,0.2);}
+  .project-card.featured-noc h3{font-size:1.4rem;margin-bottom:0.5rem;}
   .featured-badges{display:flex;gap:0.6rem;margin-bottom:1rem;flex-wrap:wrap;}
   .badge{border-radius:100px;padding:0.25rem 0.8rem;font-family:"DM Mono",monospace;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;}
   .badge-ai{background:rgba(123,47,255,0.2);border:1px solid rgba(123,47,255,0.45);color:#c084fc;}
   .badge-live{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:var(--accent);}
   .badge-gambia{background:rgba(0,102,255,0.15);border:1px solid rgba(0,102,255,0.35);color:#60a5fa;}
+  .badge-noc{background:rgba(0,102,255,0.15);border:1px solid rgba(0,102,255,0.35);color:#60a5fa;}
+  .badge-saas{background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:var(--accent);}
   .featured-body{display:grid;grid-template-columns:1fr auto;gap:2.5rem;align-items:end;margin-top:0.5rem;}
   .featured-actions{display:flex;flex-direction:column;gap:0.75rem;flex-shrink:0;min-width:180px;}
   #contact{background:var(--surface);}
@@ -117,7 +125,7 @@
   .footer-copy{font-family:"DM Mono",monospace;font-size:0.68rem;color:var(--muted);letter-spacing:0.05em;}
   .fade-up{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease;}
   .fade-up.visible{opacity:1;transform:translateY(0);}
-  @media(max-width:900px){nav{padding:1rem 1.5rem;}.nav-links{gap:1.5rem;}section{padding:4rem 1.5rem;}#hero{padding:7rem 1.5rem 4rem;}.hero-content{grid-template-columns:1fr;gap:3rem;}.avatar-frame{width:220px;height:260px;}.about-grid,.contact-grid,.projects-grid{grid-template-columns:1fr;gap:2rem;}.skills-grid{grid-template-columns:1fr 1fr;}.stats-row{gap:1rem;}footer{flex-direction:column;gap:0.5rem;text-align:center;}.project-card.featured{grid-column:1;}.featured-body{grid-template-columns:1fr;gap:1.5rem;}.featured-actions{flex-direction:row;flex-wrap:wrap;}}
+  @media(max-width:900px){nav{padding:1rem 1.5rem;}.nav-links{gap:1.5rem;}section{padding:4rem 1.5rem;}#hero{padding:7rem 1.5rem 4rem;}.hero-content{grid-template-columns:1fr;gap:3rem;}.avatar-frame{width:220px;height:260px;}.about-grid,.contact-grid,.projects-grid{grid-template-columns:1fr;gap:2rem;}.skills-grid{grid-template-columns:1fr 1fr;}.stats-row{gap:1rem;}footer{flex-direction:column;gap:0.5rem;text-align:center;}.project-card.featured,.project-card.featured-noc{grid-column:1;}.featured-body{grid-template-columns:1fr;gap:1.5rem;}.featured-actions{flex-direction:row;flex-wrap:wrap;}}
   @media(max-width:580px){h1{font-size:2.2rem;line-height:1.1;}#hero{padding:6rem 1.2rem 3rem;}.hero-subtitle{font-size:0.95rem;}.stats-row{flex-direction:column;gap:0.8rem;}.avatar-frame{width:180px;height:210px;}.skills-grid,.certs-grid{grid-template-columns:1fr;}.nav-links{display:none;}}
 </style>
 </head>
@@ -140,14 +148,14 @@
     <div>
       <div class="hero-tag">AI Founder &amp; Network Engineer</div>
       <h1>Alex<br><span class="hero-name-accent">Sambou</span></h1>
-      <p class="hero-subtitle">AI Solutions Architect, Founder &amp; Network Engineer from The Gambia. Applied 10+ years of infrastructure thinking to build <strong style="color:var(--text);">GambiaGPT</strong> &#8212; The Gambia&#39;s first national AI platform &#8212; as a solo project with zero institutional funding.</p>
+      <p class="hero-subtitle">AI Solutions Architect, Founder &amp; Network Engineer from The Gambia. Built <strong style="color:var(--text);">GambiaGPT</strong> &#8212; The Gambia&#39;s first national AI platform &#8212; and <strong style="color:var(--text);">NetWatchX</strong> &#8212; a production NOC SaaS platform &#8212; both as solo projects with zero institutional funding.</p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn-primary">Get in Touch</a>
         <a href="#projects" class="btn btn-outline">View Projects</a>
         <a href="https://gambiagpt.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-ai">&#129302; Try GambiaGPT &#8599;</a>
       </div>
       <div class="stats-row">
-        <div class="stat-box"><div class="stat-num">10+</div><div class="stat-label">Years Exp</div></div>
+        <div class="stat-box"><div class="stat-num">14+</div><div class="stat-label">Years Exp</div></div>
         <div class="stat-box"><div class="stat-num">150+</div><div class="stat-label">Nodes Deployed</div></div>
         <div class="stat-box"><div class="stat-num">99%</div><div class="stat-label">Uptime SLA</div></div>
       </div>
@@ -170,23 +178,24 @@
     <div class="divider"></div>
     <div class="about-grid">
       <div class="about-text fade-up">
-        <p>I&#39;m a <strong>network engineer and AI founder from The Gambia</strong>. With a background in routing, switching, and cybersecurity, I applied infrastructure thinking to build GambiaGPT &#8212; The Gambia&#39;s first national AI platform &#8212; as a solo project with zero institutional funding.</p>
-        <p>My networking background is my <strong>superpower in AI</strong>, not a limitation. While most AI developers build things that work technically but fail at the infrastructure layer, I understand latency, uptime, bandwidth constraints, and what it means for a user on a 3G connection in Bansang versus fibre in Banjul. That thinking shapes how GambiaGPT is built differently.</p>
-        <p>In building GambiaGPT I applied Python, LangChain, FAISS vector databases, RAG pipelines, Streamlit, Supabase, GitHub Actions, web scraping, prompt engineering, and API integration &#8212; not in a classroom, but under real pressure, solving real errors, shipping a real product.</p>
+        <p>I&#39;m a <strong>network engineer and AI founder from The Gambia</strong>. With a background in routing, switching, and cybersecurity, I applied 14 years of infrastructure thinking to build two live products: GambiaGPT &#8212; The Gambia&#39;s first national AI platform &#8212; and NetWatchX &#8212; a production-grade multi-tenant NOC SaaS platform.</p>
+        <p>My networking background is my <strong>superpower in AI</strong>, not a limitation. While most AI developers build things that work technically but fail at the infrastructure layer, I understand latency, uptime, bandwidth constraints, and what it means for a user on a 3G connection in Bansang versus fibre in Banjul. That thinking shapes how everything I build works differently.</p>
+        <p>In building these platforms I applied Python, FastAPI, React, LangChain, FAISS vector databases, RAG pipelines, Streamlit, Supabase, SNMP, GitHub Actions, and more &#8212; not in a classroom, but under real pressure, solving real errors, shipping real products.</p>
         <p>I also continue to deliver enterprise-grade transmission design and QoS engineering for <strong>ZTE Corporation (Worley Project)</strong> &#8212; bringing the same infrastructure discipline to every layer of what I build.</p>
         <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.25rem;">
           <a href="https://www.linkedin.com/in/alex-sambou-9b695717b/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn &#8599;</a>
           <a href="https://gambiagpt.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-ai">&#129302; GambiaGPT &#8599;</a>
+          <a href="https://netwatchx.com" target="_blank" rel="noopener noreferrer" class="btn btn-noc">&#128202; NetWatchX &#8599;</a>
         </div>
       </div>
       <div class="fade-up" style="transition-delay:0.15s">
         <p style="font-family:DM Mono,monospace;font-size:0.72rem;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">Certifications</p>
         <div class="certs-grid">
-          <div class="cert-chip">CCNA</div><div class="cert-chip">Fortinet NSE 1</div>
-          <div class="cert-chip">Fortinet NSE 2</div><div class="cert-chip">Oracle Cloud Infra</div>
-          <div class="cert-chip">Oracle Autonomous DB</div><div class="cert-chip">Oracle Cloud Data Mgmt</div>
-          <div class="cert-chip">Cisco Switching</div><div class="cert-chip">HPE Switching</div>
-          <div class="cert-chip">CCEP</div>
+          <div class="cert-chip">CCEP (2026)</div><div class="cert-chip">CCNA</div>
+          <div class="cert-chip">Fortinet NSE 1</div><div class="cert-chip">Fortinet NSE 2</div>
+          <div class="cert-chip">Oracle Cloud Infra</div><div class="cert-chip">Oracle Autonomous DB</div>
+          <div class="cert-chip">Oracle Cloud Data Mgmt</div><div class="cert-chip">Cisco Switching</div>
+          <div class="cert-chip">HPE Switching</div>
         </div>
         <p style="font-family:DM Mono,monospace;font-size:0.72rem;color:var(--muted);letter-spacing:0.12em;text-transform:uppercase;margin:2rem 0 1rem;">Education</p>
         <div class="cert-chip" style="width:100%;justify-content:flex-start;gap:0.75rem;">
@@ -211,12 +220,12 @@
       <div class="skill-card fade-up" style="transition-delay:0.1s">
         <div class="skill-icon">&#9881;&#65039;</div>
         <h3>Automation &amp; Orchestration</h3>
-        <div class="skill-tags"><span class="tag">Ansible</span><span class="tag">Puppet</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">SNMP</span><span class="tag">Self-Healing</span></div>
+        <div class="skill-tags"><span class="tag">Ansible</span><span class="tag">Puppet</span><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">SNMP</span><span class="tag">FastAPI</span><span class="tag">React</span></div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.2s">
         <div class="skill-icon">&#128272;</div>
         <h3>Security &amp; Access</h3>
-        <div class="skill-tags"><span class="tag">Zero-Trust</span><span class="tag">Fortinet FortiGate</span><span class="tag">IPsec VPN</span><span class="tag">Firewall Policy</span><span class="tag">LDAP</span><span class="tag">IAM</span></div>
+        <div class="skill-tags"><span class="tag">Zero-Trust</span><span class="tag">Fortinet FortiGate</span><span class="tag">IPsec VPN</span><span class="tag">Firewall Policy</span><span class="tag">LDAP</span><span class="tag">IAM</span><span class="tag">CCEP</span></div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.05s">
         <div class="skill-icon">&#128225;</div>
@@ -226,12 +235,12 @@
       <div class="skill-card fade-up" style="transition-delay:0.15s">
         <div class="skill-icon">&#128202;</div>
         <h3>Monitoring &amp; Operations</h3>
-        <div class="skill-tags"><span class="tag">SolarWinds</span><span class="tag">Wireshark</span><span class="tag">NMS</span><span class="tag">Log Analysis</span><span class="tag">DRP</span><span class="tag">SLA Compliance</span><span class="tag">MTTR</span></div>
+        <div class="skill-tags"><span class="tag">SolarWinds</span><span class="tag">Wireshark</span><span class="tag">NMS</span><span class="tag">NetWatchX</span><span class="tag">Log Analysis</span><span class="tag">DRP</span><span class="tag">SLA Compliance</span><span class="tag">MTTR</span></div>
       </div>
       <div class="skill-card fade-up" style="transition-delay:0.25s">
         <div class="skill-icon">&#129302;</div>
         <h3>AI &amp; Cloud</h3>
-        <div class="skill-tags"><span class="tag">AI Development</span><span class="tag">LLM Integration</span><span class="tag">Streamlit</span><span class="tag">Oracle Cloud</span><span class="tag">Oracle Autonomous DB</span><span class="tag">Data Centre</span></div>
+        <div class="skill-tags"><span class="tag">AI Development</span><span class="tag">LLM Integration</span><span class="tag">RAG / FAISS</span><span class="tag">Streamlit</span><span class="tag">Oracle Cloud</span><span class="tag">Oracle Autonomous DB</span></div>
       </div>
     </div>
   </div>
@@ -301,6 +310,7 @@
     <div class="divider"></div>
     <div class="projects-grid">
 
+      <!-- GambiaGPT -->
       <div class="project-card featured fade-up">
         <div class="featured-badges">
           <span class="badge badge-ai">&#9733; Featured</span>
@@ -325,28 +335,56 @@
         </div>
       </div>
 
-      <div class="project-card fade-up" style="transition-delay:0.05s">
+      <!-- NetWatchX -->
+      <div class="project-card featured-noc fade-up" style="transition-delay:0.05s">
+        <div class="featured-badges">
+          <span class="badge badge-live">&#9679; Live</span>
+          <span class="badge badge-saas">&#128202; SaaS Product</span>
+          <span class="badge badge-noc">2026</span>
+        </div>
+        <h3>&#128202; NetWatchX &#8212; Multi-Tenant NOC SaaS Platform</h3>
+        <div class="featured-body">
+          <div>
+            <p>Production-grade Network Operations Centre SaaS platform built from scratch. Real-time device monitoring with SNMP polling, automated ping/traceroute/DNS diagnosis, bandwidth tracking, latency sparklines, and Telegram alerting. Multi-tenant architecture with role-based access control across Admin, Staff, Manager, Engineer and NOC tiers. Downloadable Python monitoring agent with Windows service installer. Basic ($30/mo) and Premium ($60/mo with deep SNMP metrics) subscription plans.</p>
+            <div class="skill-tags" style="margin-bottom:1rem;">
+              <span class="tag">React</span><span class="tag">Python</span><span class="tag">FastAPI</span>
+              <span class="tag">SNMP</span><span class="tag">Multi-tenant SaaS</span>
+              <span class="tag">JWT Auth</span><span class="tag">Nginx</span><span class="tag">Telegram API</span>
+            </div>
+            <p class="project-result">&#128202; Live at netwatchx.com &#8212; commercial network monitoring for teams</p>
+          </div>
+          <div class="featured-actions">
+            <a href="https://netwatchx.com" target="_blank" rel="noopener noreferrer" class="btn btn-noc">&#128202; Visit NetWatchX &#8599;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Docker Lab -->
+      <div class="project-card fade-up" style="transition-delay:0.1s">
         <h3>&#128051; Docker-Based Network Lab</h3>
         <p>Designed and deployed a containerised network lab using Docker Compose to simulate enterprise-grade VLANs, VPNs, and firewall configurations. Automated container creation integrated with Python scripts for dynamic provisioning.</p>
         <div class="skill-tags"><span class="tag">Docker Compose</span><span class="tag">Python</span><span class="tag">VLANs</span><span class="tag">Firewalls</span><span class="tag">VPN</span></div>
         <p class="project-result">&#8593; 60% testing efficiency improvement</p>
       </div>
 
-      <div class="project-card fade-up" style="transition-delay:0.1s">
+      <!-- WAN -->
+      <div class="project-card fade-up" style="transition-delay:0.15s">
         <h3>&#128279; Multi-Region WAN Infrastructure</h3>
         <p>Led backbone design and deployment of a multi-region WAN at INET Gambia, integrating 150+ access nodes while maintaining 99% uptime SLA throughout the cutover. Coordinated transmission and data centre teams for zero-outage delivery.</p>
         <div class="skill-tags"><span class="tag">OSPF</span><span class="tag">BGP</span><span class="tag">Cisco</span><span class="tag">Mikrotik</span><span class="tag">SLA</span></div>
         <p class="project-result">&#8593; 99% network availability achieved</p>
       </div>
 
-      <div class="project-card fade-up" style="transition-delay:0.15s">
+      <!-- Zero Trust -->
+      <div class="project-card fade-up" style="transition-delay:0.2s">
         <h3>&#128737;&#65039; Zero-Trust Security Rollout</h3>
         <p>Designed and implemented a zero-trust network architecture integrating Fortinet appliances, LDAP-based access controls, and end-to-end IPsec VPN tunnelling across distributed enterprise sites &#8212; eliminating unauthorised lateral movement.</p>
         <div class="skill-tags"><span class="tag">Zero-Trust</span><span class="tag">Fortinet</span><span class="tag">LDAP</span><span class="tag">IPsec VPN</span></div>
         <p class="project-result">Enterprise-grade security across distributed sites</p>
       </div>
 
-      <div class="project-card fade-up" style="transition-delay:0.2s">
+      <!-- BCG -->
+      <div class="project-card fade-up" style="transition-delay:0.25s">
         <h3>&#128200; BCG Data Analysis Simulation</h3>
         <p>Completed a BCG Data for Decision Makers job simulation on Forage &#8212; analysed multi-channel advertising campaign data, identified conversion trends, and delivered a structured, data-backed strategic recommendation.</p>
         <div class="skill-tags"><span class="tag">Data Analysis</span><span class="tag">BCG Forage</span><span class="tag">Strategic Reporting</span></div>
@@ -364,7 +402,7 @@
     <div class="divider"></div>
     <div class="contact-grid">
       <div class="contact-intro fade-up">
-        <p>Whether you&#39;re looking for an AI solutions architect, an experienced network engineer, a consultant for infrastructure projects, or want to discuss funding or partnerships for GambiaGPT &#8212; I&#39;d love to hear from you.</p>
+        <p>Whether you&#39;re looking for an AI solutions architect, an experienced network engineer, a consultant for infrastructure projects, want to use NetWatchX for your organisation, or discuss funding or partnerships for GambiaGPT &#8212; I&#39;d love to hear from you.</p>
         <p>Open to international opportunities. Reach out via email or WhatsApp for the fastest response.</p>
       </div>
       <div class="contact-links fade-up" style="transition-delay:0.15s">
@@ -372,6 +410,7 @@
         <a href="https://wa.me/2202674748" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-link-icon">&#128172;</span><span><span class="contact-link-label">WhatsApp</span>+220 267 4748</span></a>
         <a href="https://www.linkedin.com/in/alex-sambou-9b695717b/" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-link-icon">&#128279;</span><span><span class="contact-link-label">LinkedIn</span>linkedin.com/in/alex-sambou-9b695717b</span></a>
         <a href="https://gambiagpt.streamlit.app/" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-link-icon">&#129302;</span><span><span class="contact-link-label">GambiaGPT</span>gambiagpt.streamlit.app</span></a>
+        <a href="https://netwatchx.com" target="_blank" rel="noopener noreferrer" class="contact-link"><span class="contact-link-icon">&#128202;</span><span><span class="contact-link-label">NetWatchX</span>netwatchx.com</span></a>
         <a href="https://techopsgm.com" class="contact-link"><span class="contact-link-icon">&#127757;</span><span><span class="contact-link-label">Website</span>techopsgm.com</span></a>
       </div>
     </div>
@@ -380,7 +419,7 @@
 
 <footer>
   <div class="footer-logo">AS/</div>
-  <div class="footer-copy">&#169; 2026 Alex Sambou &#183; AI Solutions Architect &amp; Founder &#183; GambiaGPT</div>
+  <div class="footer-copy">&#169; 2026 Alex Sambou &#183; AI Solutions Architect &amp; Founder &#183; GambiaGPT &#183; NetWatchX</div>
 </footer>
 
 <script>
